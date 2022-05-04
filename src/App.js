@@ -11,47 +11,48 @@ function App() {
 }
 
 const columns = [
-  { field: 'id', headerName: 'ID', width: 90 },
+  { field: 'fullName', headerName: 'Full Name', width: 150 },
   {
-    field: 'firstName',
-    headerName: 'First name',
+    field: 'jobRole',
+    headerName: 'Job Role',
     width: 150,
     editable: true,
   },
   {
-    field: 'lastName',
-    headerName: 'Last name',
+    field: 'status',
+    headerName: 'Status',
     width: 150,
     editable: true,
   },
   {
-    field: 'age',
-    headerName: 'Age',
+    field: 'progress',
+    headerName: 'Progress',
     type: 'number',
     width: 110,
     editable: true,
   },
   {
-    field: 'fullName',
-    headerName: 'Full name',
+    field: 'dueDate',
+    headerName: 'Due Date',
     description: 'This column has a value getter and is not sortable.',
     sortable: false,
-    width: 160,
-    valueGetter: (params) =>
-      `${params.row.firstName || ''} ${params.row.lastName || ''}`,
+    width: 160
   },
 ];
 
 const rows = [
-  { id: 1, lastName: 'Snow', firstName: 'Jon', age: 35 },
-  { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 42 },
-  { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 45 },
-  { id: 4, lastName: 'Stark', firstName: 'Arya', age: 16 },
-  { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
-  { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
-  { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
-  { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
-  { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
+  { id: 1, fullName: "Hoaran Li", jobRole: 'Java Developer', status: 'New', progress: 35, dueDate: "a" },
+  { id: 2, fullName: "Peter Sun", jobRole: 'React Developer', status: 'Pending', progress: 35, dueDate: "a" },
+  { id: 3, fullName: "Jack Rabbit", jobRole: 'Angular Developer', status: 'Pending', progress: 35, dueDate: "a" },
+  { id: 4, fullName: "Tumi Sum", jobRole: 'Java Developer', status: 'Pending', progress: 35, dueDate: "a" },
+  { id: 5, fullName: "Eelee Brunson", jobRole: 'React Developer', status: 'Pending', progress: 35, dueDate: "a" },
+  { id: 6, fullName: "Sum Dillon", jobRole: 'Angular Developer', status: 'Pending', progress: 35, dueDate: "a" },
+  { id: 7, fullName: "Vince Crier", jobRole: 'Java Developer', status: 'Pending', progress: 35, dueDate: "a" },
+  { id: 8, fullName: "Tum Basco", jobRole: 'React Developer', status: 'Pending', progress: 35, dueDate: "a" },
+  { id: 9, fullName: "Ser Terir", jobRole: 'Angular Developer', status: 'Pending', progress: 35, dueDate: "a" },
+  { id: 10, fullName: "Tus Sommer", jobRole: 'Java Developer', status: 'Pending', progress: 35, dueDate: "a" },
+  { id: 11, fullName: "Emily Bunchin", jobRole: 'React Developer', status: 'Pending', progress: 35, dueDate: "a" },
+  { id: 12, fullName: "Ting Duzzo", jobRole: 'Angular Developer', status: 'Pending', progress: 35, dueDate: "a" },
 ];
 
 function DataGridDemo() {
