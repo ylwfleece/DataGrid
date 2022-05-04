@@ -39,6 +39,9 @@ const columns = [
     sortable: false,
     disableColumnMenu: true,
     headerClassName: "lastcolumnSeparator",
+    renderCell: (e) => {
+      return <ul><li>{rows[e.id-1].status}</li></ul>
+    }
   },
   {
     field: "progress",
@@ -181,6 +184,7 @@ function DataGridDemo() {
           rowsPerPageOptions={[9]}
           checkboxSelection
           disableSelectionOnClick
+          sx={{ '& .MuiDataGrid-row': { borderTopColor: '#2185B9', borderTopStyle: 'solid'} }}
         />
       </div>
     </div>
