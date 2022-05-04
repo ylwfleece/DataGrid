@@ -1,6 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { DataGrid } from "@mui/x-data-grid";
+import AuraProgressMeter from './AuraProgressMeter/AuraProgressMeter'
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
+import { useState } from 'react'
 
 function App() {
   return (
@@ -43,7 +47,9 @@ const columns = [
     sortable: false,
     disableColumnMenu: true,
     headerClassName: "lastcolumnSeparator",
-    // editable: true,
+    renderCell: (e) => {
+      return <AuraProgressMeter value={rows[e.id-1].progress}/>
+    }
   },
   {
     field: "dueDate",
