@@ -2,6 +2,14 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  /* background-color: darkblue; */
+}
+
+.dg-container {
+  width: '1000px';
+  height: '900px';
+  background-color: #0D478B;
+  border-radius: 20px;
 }
 
 .lastcolumnSeparator .MuiDataGrid-columnSeparator--sideRight {
@@ -11,3 +19,5 @@
 .css-1xy1myn-MuiDataGrid-root .MuiDataGrid-iconSeparator {
   display: none;
 }
+
+
