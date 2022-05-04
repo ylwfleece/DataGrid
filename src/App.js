@@ -99,7 +99,7 @@ const rows = [
     fullName: "Eelee Brunson",
     jobRole: "React Developer",
     status: "Pending",
-    progress: 0,
+    progress: 20,
     dueDate: "23 October 2022",
   },
   {
@@ -107,7 +107,7 @@ const rows = [
     fullName: "Sum Dillon",
     jobRole: "Angular Developer",
     status: "Pending",
-    progress: 90,
+    progress: 80,
     dueDate: "18 November 2022",
   },
   {
@@ -123,7 +123,7 @@ const rows = [
     fullName: "Tum Basco",
     jobRole: "React Developer",
     status: "Pending",
-    progress: 80,
+    progress: 90,
     dueDate: "18 November 2022",
   },
   {
@@ -131,7 +131,7 @@ const rows = [
     fullName: "Ser Terir",
     jobRole: "Angular Developer",
     status: "Pending",
-    progress: 0,
+    progress: 20,
     dueDate: "23 October 2022",
   },
   {

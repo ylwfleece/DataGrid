@@ -6,8 +6,21 @@ import Box from '@mui/material/Box';
 
 function CircularProgressWithLabel(props) {
   return (
-    <Box sx={{ position: 'relative', display: 'inline-flex' }}>
-      <CircularProgress variant="determinate" {...props} />
+    <Box sx={{ position: 'relative', display: 'inline-flex'}}>
+      <CircularProgress
+        variant="determinate"
+        disableShrink
+        sx={{
+          position: 'absolute',
+          left: 0,
+          color: '#ffffff',
+        }}
+        size={40}
+        thickness={4}
+        {...props}
+        value={100}
+      />
+      <CircularProgress variant="determinate" {...props} sx={{color: getProgressColor(props.value)}}/>
       <Box
         sx={{
           top: 0,
@@ -26,6 +39,18 @@ function CircularProgressWithLabel(props) {
       </Box>
     </Box>
   );
+}
+
+function getProgressColor(value) {
+  if(value >= 90){
+    return '#a3e455'
+  }
+  else if(value >= 25){
+    return '#dbaa2e'
+  }
+  else{
+    return '#f95f5f'
+  }
 }
 
 CircularProgressWithLabel.propTypes = {
