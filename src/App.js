@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import { DataGrid } from "@mui/x-data-grid";
+import { Margin } from "@mui/icons-material";
 
 function App() {
   return (
@@ -14,7 +15,7 @@ const columns = [
   {
     field: "fullName",
     headerName: "Full Name",
-    width: 150,
+    width: 190,
     sortable: false,
     disableColumnMenu: true,
     headerClassName: "lastcolumnSeparator",
@@ -22,7 +23,7 @@ const columns = [
   {
     field: "jobRole",
     headerName: "Job Role",
-    width: 150,
+    width: 190,
     sortable: false,
     disableColumnMenu: true,
     headerClassName: "lastcolumnSeparator",
@@ -30,7 +31,7 @@ const columns = [
   {
     field: "status",
     headerName: "Status",
-    width: 150,
+    width: 190,
     sortable: false,
     disableColumnMenu: true,
     headerClassName: "lastcolumnSeparator",
@@ -38,20 +39,18 @@ const columns = [
   {
     field: "progress",
     headerName: "Progress",
-    type: "number",
-    width: 110,
+    width: 190,
     sortable: false,
     disableColumnMenu: true,
     headerClassName: "lastcolumnSeparator",
-    // editable: true,
   },
   {
     field: "dueDate",
     headerName: "Due Date",
-    width: 160,
+    width: 190,
     sortable: false,
     disableColumnMenu: true,
-    headerClassName: 'lastcolumnSeparator',
+    headerClassName: "lastcolumnSeparator",
   },
 ];
 
@@ -156,15 +155,27 @@ const rows = [
 
 function DataGridDemo() {
   return (
-    <div style={{ height: 600, width: "100%" }}>
-      <DataGrid
-        rows={rows}
-        columns={columns}
-        pageSize={9}
-        rowsPerPageOptions={[9]}
-        checkboxSelection
-        disableSelectionOnClick
-      />
+    <div className="dg-container">
+      <div
+        style={{
+          height: '600px',
+          width: '1000px',
+          backgroundColor: "#11619F",
+          color: "white",
+          borderRadius: "20px",
+          marginTop: '50px'
+        }}
+      >
+        <DataGrid
+          style={{ color: "white" }}
+          rows={rows}
+          columns={columns}
+          pageSize={9}
+          rowsPerPageOptions={[9]}
+          checkboxSelection
+          disableSelectionOnClick
+        />
+      </div>
     </div>
   );
 }
