@@ -166,9 +166,20 @@ const rows = [
 function DataGridDemo() {
   return (
     <div className="dg-container">
+      <div className="top-bar">
+        <p style={{color: '#27BBD8', fontWeight: '800'}}>On-boarding Progress</p>
+        <input className="search-name" placeholder="Search name"></input>
+        <div className="spacer"></div>
+        <div className="top-bar-btns">
+          <button>a</button>
+          <button>a</button>
+          <button>a</button>
+          <button>a</button>
+        </div>
+      </div>
       <div
         style={{
-          height: '600px',
+          height: '620px',
           width: '1000px',
           backgroundColor: "#11619F",
           color: "white",

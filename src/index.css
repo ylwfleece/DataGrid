@@ -12,6 +12,22 @@
   border-radius: 20px;
 }
 
+.top-bar {
+  height: 40px;
+  padding-top: 15px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.search-name {
+  margin-left: 20px;
+}
+
+.spacer {
+  width: 50%;
+}
+
 .lastcolumnSeparator .MuiDataGrid-columnSeparator--sideRight {
   display: none !important;
 }
