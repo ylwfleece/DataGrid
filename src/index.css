@@ -71,6 +71,10 @@ input.nosubmit {
   display: block;
 }
 
+.top-bar-btns__box:hover img {
+  background-color: #11619F;
+}
+
 .lastcolumnSeparator .MuiDataGrid-columnSeparator--sideRight {
   display: none !important;
 }
@@ -91,7 +95,6 @@ ul {
 
 li::before {
   content: "•";
-  
   display: inline-block;
   width: 1em;
   margin-left: -3em;
