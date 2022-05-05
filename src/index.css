@@ -40,19 +40,36 @@ input.nosubmit {
 }
 
 .top-bar-btns {
+  height: 40px;
   width: 200px;
-  margin-right: 20px;
+  margin-right: 85px;
   margin-top: 13px;
-
-}
-.top-bar-btns img {
-  width: 15%;
-  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
-​path {
-  fill: white;
-}​
+.top-bar-btns__box {
+  padding-right: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.top-bar-btns__box img {
+  height: 30px;
+  width: 40px;
+}
+
+.top-bar-btns__box span {
+  display: none;
+  background-color: #32EBF9;
+  width: 40px;
+  text-align: center;
+  font-size: 10px;
+}
+
+.top-bar-btns__box:hover span {
+  display: block;
+}
 
 .lastcolumnSeparator .MuiDataGrid-columnSeparator--sideRight {
   display: none !important;

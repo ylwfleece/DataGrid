@@ -176,11 +176,30 @@ function AuraDataGrid() {
         ></input>
         <div className="spacer"></div>
         <div className="top-bar-btns">
-          <img src={inviteSvg} alt="invite"></img>
-          <img src={reminderSvg} alt="reminder"></img>
-          <img src={calendarSvg} alt="calendar"></img>
-          <img src={inactivateSvg} alt="inactivate"></img>
-          <img src={deleteSvg} alt="delete"></img>
+          <div className="top-bar-btns__box">
+            <img src={inviteSvg} alt="invite"></img>
+            <span>Invite</span>
+          </div>
+          <div className="top-bar-btns__box">
+            <img src={reminderSvg} alt="reminder"></img>
+            <span>Remind</span>
+
+          </div>
+          <div className="top-bar-btns__box">
+            <img src={calendarSvg} alt="calendar"></img>
+            <span>Calendar</span>
+
+          </div>
+          <div className="top-bar-btns__box">
+            <img src={inactivateSvg} alt="inactivate"></img>
+            <span>Inactivate</span>
+
+          </div>
+          <div className="top-bar-btns__box">
+            <img src={deleteSvg} alt="delete"></img>
+            <span>Delete</span>
+
+          </div>
         </div>
       </div>
       <div
@@ -193,7 +212,7 @@ function AuraDataGrid() {
           marginTop: "25px",
         }}
       >
-        <DataGrid 
+        <DataGrid
           GridLinesVisibility="None"
           style={{ color: "white" }}
           rows={rows}
@@ -203,9 +222,8 @@ function AuraDataGrid() {
           checkboxSelection
           disableSelectionOnClick
           sx={{
-            border: 'none',
+            border: "none",
             "& .MuiDataGrid-row": {
-              
               borderTopColor: "#2185B9",
               borderTopStyle: "solid",
             },
