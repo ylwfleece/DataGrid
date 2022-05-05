@@ -41,7 +41,7 @@ function CircularProgressWithLabel(props) {
   );
 }
 
-function getProgressColor(value) {
+export function getProgressColor(value) {
   if(value >= 90){
     return '#a3e455'
   }
