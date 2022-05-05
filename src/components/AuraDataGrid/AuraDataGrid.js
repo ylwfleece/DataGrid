@@ -222,11 +222,26 @@ function AuraDataGrid() {
           checkboxSelection
           disableSelectionOnClick
           sx={{
-            border: "none",
+            border: 'none',
+            '& .MuiCheckbox-root svg': {
+              color: "white",
+            },
             "& .MuiDataGrid-row": {
-              borderTopColor: "#2185B9",
+              borderTopColor: "#1e88bc",
               borderTopStyle: "solid",
             },
+            "& .Mui-selected": {
+              backgroundColor: "#1e88bc !important",
+            },
+            '& .MuiDataGrid-columnSeparator': {
+              visibility: 'hidden',
+            },
+            '& .css-17jjc08-MuiDataGrid-footerContainer' : {
+              borderTopColor: "#11619F",
+            },
+            '& .css-rtrcn9-MuiTablePagination-root':{
+              color: "white"
+            }
           }}
         />
       </div>
