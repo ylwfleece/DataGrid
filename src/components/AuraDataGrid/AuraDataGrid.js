@@ -1,10 +1,7 @@
-
-import AuraProgressMeter, {getProgressColor} from '../AuraProgressMeter/AuraProgressMeter';
+import AuraProgressMeter, {
+  getProgressColor,
+} from "../AuraProgressMeter/AuraProgressMeter";
 import { DataGrid } from "@mui/x-data-grid";
-import IconButton from "@material-ui/core/IconButton";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import SearchIcon from "@material-ui/icons/Search";
-import TextField from "@mui/material/TextField";
 import calendarSvg from "../../assets/svg/data-grid/icn_hr_calendar.svg";
 import reminderSvg from "../../assets/svg/data-grid/icn_reminder.svg";
 import inviteSvg from "../../assets/svg/data-grid/icn_send-invite.svg";
@@ -15,7 +12,7 @@ const columns = [
   {
     field: "fullName",
     headerName: "Full Name",
-    width: 190,
+    width: 300,
     sortable: false,
     disableColumnMenu: true,
     headerClassName: "lastcolumnSeparator",
@@ -37,8 +34,10 @@ const columns = [
     headerClassName: "lastcolumnSeparator",
     renderCell: (e) => {
       return (
-        <ul style={{color:getProgressColor(rows[e.id - 1].progress)}}>
-          <li ><span>{rows[e.id - 1].status}</span></li>
+        <ul style={{ color: getProgressColor(rows[e.id - 1].progress) }}>
+          <li>
+            <span>{rows[e.id - 1].status}</span>
+          </li>
         </ul>
       );
     },
@@ -167,29 +166,31 @@ function AuraDataGrid() {
   return (
     <div className="dg-container">
       <div className="top-bar">
-        <p style={{ color: "#27BBD8", fontWeight: "800" }}>
+        <p style={{ color: "#32EBF9", fontWeight: "600", fontFamily: "arial" }}>
           On-boarding Progress
         </p>
-        {/* <input className="search-name" placeholder="Search name"></input> */}
-        <input className="search-name nosubmit" type="search" placeholder="Search name"></input>
+        <input
+          className="search-name nosubmit"
+          type="search"
+          placeholder="Search name"
+        ></input>
         <div className="spacer"></div>
         <div className="top-bar-btns">
+          <img src={inviteSvg} alt="invite"></img>
+          <img src={reminderSvg} alt="reminder"></img>
           <img src={calendarSvg} alt="calendar"></img>
-          <img src={reminderSvg} alt="calendar"></img>
-          <img src={inviteSvg} alt="calendar"></img>
-          <img src={deleteSvg} alt="calendar"></img>
-          <img src={inactivateSvg} alt="calendar"></img>
-
+          <img src={inactivateSvg} alt="inactivate"></img>
+          <img src={deleteSvg} alt="delete"></img>
         </div>
       </div>
       <div
         style={{
-          height: "760px",
-          width: "1000px",
+          height: "590px",
+          width: "1110px",
           backgroundColor: "#11619F",
           color: "white",
           borderRadius: "20px",
-          marginTop: "50px",
+          marginTop: "25px",
         }}
       >
         <DataGrid

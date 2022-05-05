@@ -6,8 +6,8 @@
 }
 
 .dg-container {
-  width: "1000px";
-  height: "900px";
+  width: "1110px";
+  height: "680px";
   background-color: #0d478b;
   border-radius: 20px;
 }
@@ -15,16 +15,17 @@
 .top-bar {
   height: 40px;
   padding-top: 15px;
-  padding-left: 15px;
+  padding-left: 25px;
   display: flex;
   flex-direction: row;
 }
 
 .search-name {
-  margin-left: 20px;
+  margin-left: 25px;
   border-radius: 20px;
+  margin-top: 11px;
   width: 250px;
-  height: 25px;
+  height: 30px;
 }
 
 input.nosubmit {
@@ -35,8 +36,23 @@ input.nosubmit {
 }
 
 .spacer {
-  width: 50%;
+  width: 400px;
 }
+
+.top-bar-btns {
+  width: 200px;
+  margin-right: 20px;
+  margin-top: 13px;
+
+}
+.top-bar-btns img {
+  width: 15%;
+  margin-left: 10px;
+}
+
+​path {
+  fill: white;
+}​
 
 .lastcolumnSeparator .MuiDataGrid-columnSeparator--sideRight {
   display: none !important;
