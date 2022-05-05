@@ -37,7 +37,7 @@
 }
 
 .layout-right {
-  height: 117%;
+  /* height: 100%; */
   margin-left: 15px;
   border-radius: 20px;
   background-color: #0d478b;
@@ -48,7 +48,7 @@
 }
 
 .layout-right__calendars {
-  margin-top: 20px;
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,13 +56,13 @@
   width: 95%;
 }
 
-.calendar {
-  /* border: 1px solid black; */
+/* .calendar {
+  border: 1px solid black;
   width: 95%;
   border-radius: 20px;
   height: 16%;
   background-color: white;
-}
+} */
 
 .calendar__edit {
   border: 1px solid black;
