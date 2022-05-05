@@ -153,7 +153,7 @@ const rows = [
   },
 ];
 
-function DataGridDemo() {
+function AuraDataGrid() {
   return (
     <div className="dg-container">
       <div className="top-bar">
@@ -200,4 +200,4 @@ function DataGridDemo() {
   );
 }
 
-export default DataGridDemo;
+export default AuraDataGrid;
