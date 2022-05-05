@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import AuraDataGrid from "./components/AuraDataGrid/AuraDataGrid";
+import Calendar from "./components/Calendar/Calendar";
 
 function App() {
   return (
@@ -18,11 +19,21 @@ function App() {
         </div>
         <div className="layout-right">
           <div className="layout-right__calendars">
-            <div className="calendar"></div>
-            <div className="calendar"></div>
-            <div className="calendar"></div>
-            <div className="calendar"></div>
-            <div className="calendar"></div>
+            <div className="calendar">
+              <Calendar />
+            </div>
+            <div className="calendar">
+              <Calendar />
+            </div>
+            <div className="calendar">
+              <Calendar />
+            </div>
+            <div className="calendar">
+              <Calendar />
+            </div>
+            <div className="calendar">
+              <Calendar />
+            </div>
             <div className="calendar__edit"></div>
           </div>
         </div>
