@@ -1,4 +1,4 @@
-import AuraProgressMeter from '../AuraProgressMeter/AuraProgressMeter';
+import AuraProgressMeter, {getProgressColor} from '../AuraProgressMeter/AuraProgressMeter';
 import { DataGrid } from "@mui/x-data-grid";
 
 const columns = [
@@ -27,8 +27,8 @@ const columns = [
     headerClassName: "lastcolumnSeparator",
     renderCell: (e) => {
       return (
-        <ul>
-          <li>{rows[e.id - 1].status}</li>
+        <ul style={{color:getProgressColor(rows[e.id - 1].progress)}}>
+          <li ><span>{rows[e.id - 1].status}</span></li>
         </ul>
       );
     },
