@@ -1,9 +1,9 @@
 .date-picker-container {
-    width: 85%;
-    height: 10%;
+    position: relative;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
-    /* position: relative;
-    display: inline-block; */
+    display: inline-block;
 }
 
 .date-picker-button {
@@ -15,7 +15,7 @@
     /* position: absolute; */
     margin-top: 1rem;
     top: 100%;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     left: 50%;
     padding: .5rem;
     border-radius: .5rem;
