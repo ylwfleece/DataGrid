@@ -1,5 +1,14 @@
-import AuraProgressMeter from '../AuraProgressMeter/AuraProgressMeter';
+import AuraProgressMeter from "../AuraProgressMeter/AuraProgressMeter";
 import { DataGrid } from "@mui/x-data-grid";
+import IconButton from "@material-ui/core/IconButton";
+import InputAdornment from "@material-ui/core/InputAdornment";
+import SearchIcon from "@material-ui/icons/Search";
+import TextField from "@mui/material/TextField";
+import calendarSvg from "../../assets/svg/data-grid/icn_hr_calendar.svg";
+import reminderSvg from "../../assets/svg/data-grid/icn_reminder.svg";
+import inviteSvg from "../../assets/svg/data-grid/icn_send-invite.svg";
+import deleteSvg from "../../assets/svg/data-grid/icn_user-delete.svg";
+import inactivateSvg from "../../assets/svg/data-grid/icn_user-inactivate.svg";
 
 const columns = [
   {
@@ -160,14 +169,16 @@ function AuraDataGrid() {
         <p style={{ color: "#27BBD8", fontWeight: "800" }}>
           On-boarding Progress
         </p>
-        <input className="search-name" placeholder="Search name"></input>
+        {/* <input className="search-name" placeholder="Search name"></input> */}
+        <input className="search-name nosubmit" type="search" placeholder="Search name"></input>
         <div className="spacer"></div>
         <div className="top-bar-btns">
-          <button>a</button>
-          <button>a</button>
-          <button>a</button>
-          <button>a</button>
-          <button>a</button>
+          <img src={calendarSvg} alt="calendar"></img>
+          <img src={reminderSvg} alt="calendar"></img>
+          <img src={inviteSvg} alt="calendar"></img>
+          <img src={deleteSvg} alt="calendar"></img>
+          <img src={inactivateSvg} alt="calendar"></img>
+
         </div>
       </div>
       <div
