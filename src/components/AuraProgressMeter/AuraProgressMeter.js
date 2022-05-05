@@ -9,7 +9,6 @@ function CircularProgressWithLabel(props) {
     <Box sx={{ position: 'relative', display: 'inline-flex'}}>
       <CircularProgress
         variant="determinate"
-        disableShrink
         sx={{
           position: 'absolute',
           left: 0,
@@ -33,7 +32,7 @@ function CircularProgressWithLabel(props) {
           justifyContent: 'center',
         }}
       >
-        <Typography variant="caption" component="div" color="text.secondary">
+        <Typography variant="caption" component="div" color="white">
           {`${Math.round(props.value)}%`}
         </Typography>
       </Box>

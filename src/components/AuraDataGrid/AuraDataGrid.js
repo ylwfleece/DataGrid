@@ -193,7 +193,8 @@ function AuraDataGrid() {
           marginTop: "25px",
         }}
       >
-        <DataGrid
+        <DataGrid 
+          GridLinesVisibility="None"
           style={{ color: "white" }}
           rows={rows}
           columns={columns}
@@ -202,7 +203,9 @@ function AuraDataGrid() {
           checkboxSelection
           disableSelectionOnClick
           sx={{
+            border: 'none',
             "& .MuiDataGrid-row": {
+              
               borderTopColor: "#2185B9",
               borderTopStyle: "solid",
             },

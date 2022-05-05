@@ -83,3 +83,7 @@ li::before {
 li span {
   color: white;
 }
+
+.MuiDataGrid-cell{
+  border-bottom: none !important;
+}
