@@ -166,7 +166,7 @@ function AuraDataGrid() {
   return (
     <div className="dg-container">
       <div className="top-bar">
-        <p style={{ color: "#32EBF9", fontWeight: "600", fontFamily: "arial" }}>
+        <p className="top-bar-title" style={{ color: "#32EBF9", fontWeight: "600", fontFamily: "arial" }}>
           On-boarding Progress
         </p>
         <input
@@ -222,6 +222,7 @@ function AuraDataGrid() {
           checkboxSelection
           disableSelectionOnClick
           sx={{
+            width: '100%',
             border: 'none',
             '& .MuiCheckbox-root svg': {
               color: "white",
