@@ -1,8 +1,77 @@
 #root {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  /* justify-content: center; */
   /* background-color: darkblue; */
+}
+
+.layout {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+
+}
+
+.layout-left {
+  display: flex;
+  flex-direction: column;
+  width: 1110px;
+}
+
+.layout-left__charts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 19%;
+}
+
+.layout-left__table {
+  height: 81%;
+}
+
+.chart {
+  border: 1px solid black;
+  width: 32%;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+.layout-right {
+  height: 117%;
+  margin-left: 15px;
+  border-radius: 20px;
+  background-color: #0d478b;
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.layout-right__calendars {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+}
+
+.calendar {
+  /* border: 1px solid black; */
+  width: 95%;
+  border-radius: 20px;
+  height: 16%;
+  background-color: white;
+}
+
+.calendar__edit {
+  border: 1px solid black;
+  width: 30%;
+  border-radius: 20px;
+  height: 5%;
+  margin-bottom: 25px; 
+  background-color: #11619F;
+
 }
 
 .dg-container {
