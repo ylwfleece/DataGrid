@@ -12,7 +12,7 @@ const columns = [
   {
     field: "fullName",
     headerName: "Full Name",
-    width: 190,
+    width: 300,
     sortable: false,
     disableColumnMenu: true,
     headerClassName: "lastcolumnSeparator",
@@ -166,7 +166,7 @@ function AuraDataGrid() {
   return (
     <div className="dg-container">
       <div className="top-bar">
-        <p style={{ color: "#32EBF9", fontWeight: "800", fontFamily: "arial" }}>
+        <p style={{ color: "#32EBF9", fontWeight: "600", fontFamily: "arial" }}>
           On-boarding Progress
         </p>
         <input
@@ -186,7 +186,7 @@ function AuraDataGrid() {
       <div
         style={{
           height: "590px",
-          width: "1000px",
+          width: "1110px",
           backgroundColor: "#11619F",
           color: "white",
           borderRadius: "20px",

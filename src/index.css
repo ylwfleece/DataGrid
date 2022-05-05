@@ -6,7 +6,7 @@
 }
 
 .dg-container {
-  width: "1000px";
+  width: "1110px";
   height: "680px";
   background-color: #0d478b;
   border-radius: 20px;
@@ -21,11 +21,11 @@
 }
 
 .search-name {
-  margin-left: 20px;
+  margin-left: 25px;
   border-radius: 20px;
-  margin-top: 13px;
+  margin-top: 11px;
   width: 250px;
-  height: 25px;
+  height: 30px;
 }
 
 input.nosubmit {
@@ -36,7 +36,7 @@ input.nosubmit {
 }
 
 .spacer {
-  width: 300px;
+  width: 400px;
 }
 
 .top-bar-btns {
