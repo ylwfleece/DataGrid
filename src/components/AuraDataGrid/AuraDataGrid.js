@@ -1,10 +1,6 @@
 
 import AuraProgressMeter, {getProgressColor} from '../AuraProgressMeter/AuraProgressMeter';
 import { DataGrid } from "@mui/x-data-grid";
-import IconButton from "@material-ui/core/IconButton";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import SearchIcon from "@material-ui/icons/Search";
-import TextField from "@mui/material/TextField";
 import calendarSvg from "../../assets/svg/data-grid/icn_hr_calendar.svg";
 import reminderSvg from "../../assets/svg/data-grid/icn_reminder.svg";
 import inviteSvg from "../../assets/svg/data-grid/icn_send-invite.svg";
@@ -192,7 +188,8 @@ function AuraDataGrid() {
           marginTop: "50px",
         }}
       >
-        <DataGrid
+        <DataGrid 
+          GridLinesVisibility="None"
           style={{ color: "white" }}
           rows={rows}
           columns={columns}
@@ -201,7 +198,9 @@ function AuraDataGrid() {
           checkboxSelection
           disableSelectionOnClick
           sx={{
+            border: 'none',
             "& .MuiDataGrid-row": {
+              
               borderTopColor: "#2185B9",
               borderTopStyle: "solid",
             },
