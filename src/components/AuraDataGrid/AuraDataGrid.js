@@ -1,10 +1,6 @@
 
 import AuraProgressMeter, {getProgressColor} from '../AuraProgressMeter/AuraProgressMeter';
 import { DataGrid } from "@mui/x-data-grid";
-import IconButton from "@material-ui/core/IconButton";
-import InputAdornment from "@material-ui/core/InputAdornment";
-import SearchIcon from "@material-ui/icons/Search";
-import TextField from "@mui/material/TextField";
 import calendarSvg from "../../assets/svg/data-grid/icn_hr_calendar.svg";
 import reminderSvg from "../../assets/svg/data-grid/icn_reminder.svg";
 import inviteSvg from "../../assets/svg/data-grid/icn_send-invite.svg";
@@ -175,11 +171,10 @@ function AuraDataGrid() {
         <div className="spacer"></div>
         <div className="top-bar-btns">
           <img src={calendarSvg} alt="calendar"></img>
-          <img src={reminderSvg} alt="calendar"></img>
-          <img src={inviteSvg} alt="calendar"></img>
-          <img src={deleteSvg} alt="calendar"></img>
-          <img src={inactivateSvg} alt="calendar"></img>
-
+          <img src={reminderSvg} alt="reminder"></img>
+          <img src={inviteSvg} alt="invite"></img>
+          <img src={deleteSvg} alt="delete"></img>
+          <img src={inactivateSvg} alt="inactivate"></img>
         </div>
       </div>
       <div

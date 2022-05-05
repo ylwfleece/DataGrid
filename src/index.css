@@ -20,6 +20,16 @@
   flex-direction: row;
 }
 
+.top-bar-btns {
+  width: 20%;
+  margin-right: 25px;
+}
+.top-bar-btns img {
+  width: 20%;
+}
+
+
+
 .search-name {
   margin-left: 20px;
   border-radius: 20px;
