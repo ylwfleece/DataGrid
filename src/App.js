@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import AuraDataGrid from "./components/AuraDataGrid/AuraDataGrid";
-import Calendar from "./components/Calendar/Calendar";
+import AuraCalendar from "./components/AuraCalendar/AuraCalendar";
 import LChart from "./components/chart/LChart"
 import AChart from "./components/chart/AChart"
 import BChart from "./components/chart/BChart"
