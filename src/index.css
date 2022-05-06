@@ -10,7 +10,7 @@
   flex-direction: row;
   margin-left: 5px auto;
   position: absolute;
-  width: 1200px;
+  width: 1500px;
   height: 850px;
 
 }
@@ -46,6 +46,7 @@
 } */
 
 .layout-right {
+  position: relative;
   margin-left: 15px;
   border-radius: 20px;
   background-color: #0d478b;
@@ -54,11 +55,12 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 400px;
 }
 
 .layout-right__calendars {
   flex: 8;
-  margin-top: 5px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,27 +68,8 @@
   width: 95%;
   overflow: scroll;
   margin-bottom: 30px;
+  overflow-x: hidden;
 }
-
-/* .calendar {
-  flex: 2;
-  border: 1px solid black;
-  width: 95%;
-  border-radius: 20px;
-  height: auto;
-  background-color: white;
-}  */
-
-/* .calendar__edit {
-  flex: 1;
-  border: 1px solid black;
-  width: 30%;
-  border-radius: 20px;
-  height: 5%;
-  margin-bottom: 25px;
-  background-color: #11619F;
-
-} */
 
 .dg-container {
   height: 100%;

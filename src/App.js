@@ -30,7 +30,6 @@ function App() {
             <AuraCalendar />
             <AuraCalendar />
           </div>
-          {/* <div className='calendar__edit'></div> */}
           <AuraButton
             size='small'
               variant='contained'
