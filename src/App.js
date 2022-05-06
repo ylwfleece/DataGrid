@@ -19,23 +19,13 @@ function App() {
         </div>
         <div className="layout-right">
           <div className="layout-right__calendars">
-            {/* <div className="calendar"> */}
-              <Calendar />
-            {/* </div> */}
-            {/* <div className="calendar"> */}
-              <Calendar />
-            {/* </div> */}
-            {/* <div className="calendar"> */}
-              <Calendar />
-            {/* </div> */}
-            {/* <div className="calendar"> */}
-              <Calendar />
-            {/* </div> */}
-            {/* <div className="calendar"> */}
-              <Calendar />
-            {/* </div> */}
-            <div className="calendar__edit"></div>
+            <Calendar />
+            <Calendar />
+            <Calendar />
+            <Calendar />
+            <Calendar />
           </div>
+          <div className="calendar__edit"></div>
         </div>
       </div>
     </div>

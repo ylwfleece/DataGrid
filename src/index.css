@@ -8,7 +8,10 @@
 .layout {
   display: flex;
   flex-direction: row;
-  margin-left: 5px;
+  margin-left: 5px auto;
+  position: absolute;
+  width: 1200px;
+  height: 900px;
 
 }
 
@@ -22,11 +25,12 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 19%;
+  height: 180px;
 }
 
 .layout-left__table {
-  height: 81%;
+  display: flex;
+  height: 720px;
 }
 
 .chart {
@@ -37,48 +41,55 @@
 }
 
 .layout-right {
-  /* height: 100%; */
   margin-left: 15px;
   border-radius: 20px;
   background-color: #0d478b;
-  width: 280px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .layout-right__calendars {
+  flex: 8;
   margin-top: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   width: 95%;
+  overflow: scroll;
+  margin-bottom: 30px;
 }
 
 /* .calendar {
+  flex: 2;
   border: 1px solid black;
   width: 95%;
   border-radius: 20px;
-  height: 16%;
+  height: auto;
   background-color: white;
-} */
+}  */
 
 .calendar__edit {
+  flex: 1;
   border: 1px solid black;
   width: 30%;
   border-radius: 20px;
   height: 5%;
-  margin-bottom: 25px; 
+  margin-bottom: 25px;
   background-color: #11619F;
 
 }
 
 .dg-container {
+  height: 100%;
   width: "1110px";
-  height: "680px";
+  /* height: "680px"; */
   background-color: #0d478b;
   border-radius: 20px;
+  height: auto;
 }
 
 .top-bar {
@@ -177,6 +188,6 @@ li span {
   color: white;
 }
 
-.MuiDataGrid-cell{
+.MuiDataGrid-cell {
   border-bottom: none !important;
 }
