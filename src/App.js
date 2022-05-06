@@ -5,6 +5,7 @@ import AuraCalendar from "./components/AuraCalendar/AuraCalendar";
 import LChart from "./components/chart/LChart"
 import AChart from "./components/chart/AChart"
 import BChart from "./components/chart/BChart"
+import AuraButton from "./components/AuraButton/AuraButton";
 
 
 function App() {
@@ -29,7 +30,22 @@ function App() {
             <AuraCalendar />
             <AuraCalendar />
           </div>
-          <div className='calendar__edit'></div>
+          {/* <div className='calendar__edit'></div> */}
+          <AuraButton
+            size='small'
+              variant='contained'
+              fullWidth={true}
+              sx={{
+                width: '30%',
+                color: 'white',
+                marginBottom: '20px',
+                flex: '0.4',
+                borderRadius: '20px',
+                backgroundColor: '#1e88bc',
+              }}
+            >
+              Edit
+            </AuraButton>
         </div>
       </div>
     </div>
