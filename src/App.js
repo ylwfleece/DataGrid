@@ -1,17 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-import AuraDataGrid from './components/AuraDataGrid/AuraDataGrid';
-import AuraCalendar from './components/AuraCalendar/AuraCalendar';
+import logo from "./logo.svg";
+import "./App.css";
+import AuraDataGrid from "./components/AuraDataGrid/AuraDataGrid";
+import Calendar from "./components/Calendar/Calendar";
+import LChart from "./components/chart/LChart"
+import AChart from "./components/chart/AChart"
+import BChart from "./components/chart/BChart"
+
 
 function App() {
   return (
-    <div className='App'>
-      <div className='layout'>
-        <div className='layout-left'>
-          <div className='layout-left__charts'>
-            <div className='chart'></div>
-            <div className='chart'></div>
-            <div className='chart'></div>
+    <div className="App">
+      <div className="layout">
+        <div className="layout-left">
+          <div className="layout-left__charts">
+            <div className="chart"><LChart style={{height: '100%', width: '100%'}}/></div>
+            <div className="chart"><AChart /></div>
+            <div className="chart"><BChart /></div>
           </div>
           <div className='layout-left__table'>
             <AuraDataGrid />
