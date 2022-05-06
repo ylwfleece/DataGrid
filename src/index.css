@@ -77,7 +77,7 @@
   background-color: white;
 }  */
 
-.calendar__edit {
+/* .calendar__edit {
   flex: 1;
   border: 1px solid black;
   width: 30%;
@@ -86,7 +86,7 @@
   margin-bottom: 25px;
   background-color: #11619F;
 
-}
+} */
 
 .dg-container {
   height: 100%;
