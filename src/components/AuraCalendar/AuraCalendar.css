@@ -1,7 +1,7 @@
 .date-picker-container {
     position: relative;
     display: inline-block;
-    width: 400px;
+    /* width: 400px; */
 
 }
 
@@ -11,9 +11,9 @@
 
 .date-picker {
 
-    position: absolute;
+    position: relative;
     margin-top: 1rem;
-    top: 100%;
+    /* top: 100%; */
     transform: translateX(-50%);
     left: 50%;
     padding: .5rem;
