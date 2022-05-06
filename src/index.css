@@ -11,7 +11,7 @@
   margin-left: 5px auto;
   position: absolute;
   width: 1200px;
-  height: 900px;
+  height: 850px;
 
 }
 
@@ -34,11 +34,16 @@
 }
 
 .chart {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 32%;
   margin-bottom: 10px;
   border-radius: 20px;
 }
+
+/* .LChart, .AChart, .BChart {
+  width: 100%;
+  height: 100%;
+} */
 
 .layout-right {
   margin-left: 15px;
