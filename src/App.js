@@ -17,19 +17,19 @@ function App() {
             <div className="chart"><AChart /></div>
             <div className="chart"><BChart /></div>
           </div>
-          <div className="layout-left__table">
+          <div className='layout-left__table'>
             <AuraDataGrid />
           </div>
         </div>
-        <div className="layout-right">
-          <div className="layout-right__calendars">
-            <Calendar />
-            <Calendar />
-            <Calendar />
-            <Calendar />
-            <Calendar />
+        <div className='layout-right'>
+          <div className='layout-right__calendars'>
+            <AuraCalendar />
+            <AuraCalendar />
+            <AuraCalendar />
+            <AuraCalendar />
+            <AuraCalendar />
           </div>
-          <div className="calendar__edit"></div>
+          <div className='calendar__edit'></div>
         </div>
       </div>
     </div>
